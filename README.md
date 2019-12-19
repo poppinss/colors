@@ -1,9 +1,11 @@
+<div align="center"><img src="https://res.cloudinary.com/adonisjs/image/upload/q_100/v1557762307/poppinss_iftxlt.jpg" width="600px"></div>
+
 # Colors
 > Wrapper on top of Kleur with support for testing color calls.
 
-This module is a wrapper on top of Kleur to make it easier to test the output generated using the kleur API. The API exposed is 100% the same as kleur.
+[![circleci-image]][circleci-url] [![typescript-image]][typescript-url] [![npm-image]][npm-url] [![license-image]][license-url]
 
-[![circleci-image]][circleci-url] [![npm-image]][npm-url] ![][typescript-image] [![license-image]][license-url]
+This module is a wrapper on top of Kleur to make it easier to test the output generated using the kleur API. The API exposed is 100% the same as kleur.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
@@ -11,7 +13,6 @@ This module is a wrapper on top of Kleur to make it easier to test the output ge
 
 - [Why use this module?](#why-use-this-module)
 - [Usage](#usage)
-- [Maintainers](#maintainers)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -60,7 +61,7 @@ const colors = new Colors()
 // API same as kleur from here
 ```
 
-During test, you can make your code rely on `FakeColors` instead and for that, you may have to use Dependency Injection.
+When wring tests, you can make your code rely on `FakeColors` object instead of the `Colors` object. For example:
 
 ```ts
 import { FakeColors } from '@poppinss/colors'
@@ -69,16 +70,14 @@ const colors = new FakeColors()
 // API same as kleur from here
 ```
 
-## Maintainers
-[Harminder virk](https://github.com/thetutlage)
-
 [circleci-image]: https://img.shields.io/circleci/project/github/poppinss/colors/master.svg?style=for-the-badge&logo=circleci
 [circleci-url]: https://circleci.com/gh/poppinss/colors "circleci"
+
+[typescript-image]: https://img.shields.io/badge/Typescript-294E80.svg?style=for-the-badge&logo=typescript
+[typescript-url]:  "typescript"
 
 [npm-image]: https://img.shields.io/npm/v/@poppinss/colors.svg?style=for-the-badge&logo=npm
 [npm-url]: https://npmjs.org/package/@poppinss/colors "npm"
 
-[typescript-image]: https://img.shields.io/badge/Typescript-294E80.svg?style=for-the-badge&logo=typescript
-
-[license-url]: LICENSE.md
-[license-image]: https://img.shields.io/aur/license/pac.svg?style=for-the-badge
+[license-image]: https://img.shields.io/npm/l/@poppinss/colors?color=blueviolet&style=for-the-badge
+[license-url]: LICENSE.md "license"
