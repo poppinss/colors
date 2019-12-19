@@ -14,7 +14,7 @@ import { Colors } from './Base'
  * calls. The output is reliable and easy to test.
  */
 export class Stringify extends Colors {
-  private _chain: string[] = []
+  private chain: string[] = []
 
   /**
    * Perform the given transformation. The base class will
@@ -23,11 +23,11 @@ export class Stringify extends Colors {
   protected $transform (transformation: string): this
   protected $transform (transformation: string, text: string | number): string
   protected $transform (transformation: string, text?: string | number): string | this {
-    this._chain.push(transformation)
+    this.chain.push(transformation)
 
     if (text !== undefined) {
-      const output = `${this._chain.join('(')}(${text})${new Array(this._chain.length).join(')')}`
-      this._chain = []
+      const output = `${this.chain.join('(')}(${text})${new Array(this.chain.length).join(')')}`
+      this.chain = []
       return output
     }
 
