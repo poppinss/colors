@@ -28,19 +28,19 @@
   "license": "MIT",
   "devDependencies": {
     "@adonisjs/mrm-preset": "^2.3.0",
-    "@types/node": "^13.13.4",
-    "commitizen": "^4.0.4",
-    "cz-conventional-changelog": "^3.1.0",
-    "del-cli": "^3.0.0",
+    "@types/node": "^14.0.13",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
+    "del-cli": "^3.0.1",
     "doctoc": "^1.4.0",
-    "eslint": "^6.8.0",
-    "eslint-plugin-adonis": "^1.0.9",
+    "eslint": "^7.3.1",
+    "eslint-plugin-adonis": "^1.0.10",
     "husky": "^4.2.5",
-    "japa": "^3.0.1",
-    "mrm": "^2.2.1",
-    "np": "^5.2.1",
-    "ts-node": "^8.9.1",
-    "typescript": "^3.8.3"
+    "japa": "^3.1.1",
+    "mrm": "^2.3.3",
+    "np": "^6.2.4",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5"
   },
   "nyc": {
     "exclude": [
@@ -66,7 +66,7 @@
     "anyBranch": false
   },
   "dependencies": {
-    "kleur": "^3.0.3"
+    "kleur": "^4.0.1"
   },
   "directories": {
     "test": "test"
