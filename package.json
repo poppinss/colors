@@ -28,7 +28,7 @@
   "author": "virk,poppinss",
   "license": "MIT",
   "devDependencies": {
-    "@adonisjs/mrm-preset": "^2.3.0",
+    "@adonisjs/mrm-preset": "^2.3.1",
     "@types/node": "^14.0.14",
     "commitizen": "^4.1.2",
     "cz-conventional-changelog": "^3.2.0",
