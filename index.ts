@@ -7,5 +7,6 @@
  * file that was distributed with this source code.
 */
 
+export { Raw } from './src/Raw'
 export { Kleur as Colors } from './src/Kleur'
 export { Stringify as FakeColors } from './src/Stringify'
