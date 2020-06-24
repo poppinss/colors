@@ -14,6 +14,7 @@ This module is a wrapper on top of Kleur to make it easier to test the output ge
 
 - [Why use this module?](#why-use-this-module)
 - [Usage](#usage)
+- [Raw Implementation](#raw-implementation)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -72,6 +73,30 @@ const colors = new FakeColors()
 
 // API same as kleur from here
 ```
+
+## Raw Implementation
+The `Raw` implementation exposes the same API as kleur, but does not apply any formatting/colors to the output string. You can use the raw implementation when the terminal does not support colors. For example:
+
+```ts
+import { Colors, Raw } from '@poppinss/colors'
+import { level } from 'color-support'
+
+const colors = level > 0 ? new Colors() : new Raw()
+colors.red('hello world')
+```
+
+Finally, there is a method called `getBest` to get the best available implementation instance for your runtime.
+
+```ts
+import { getBest } from '@poppinss/colors'
+const colors = getBest(false)
+```
+
+The `getBest` method returns following outputs
+
+- An instance of [Raw](https://github.com/poppinss/colors/blob/develop/src/Raw.ts) when the terminal does not supports colors.
+- An instance of [FakeColors](https://github.com/poppinss/colors/blob/develop/src/Stringify.ts) when the first argument passed to the method is `true`.
+- Otherwise returns an instance of [Colors](https://github.com/poppinss/colors/blob/develop/src/Kleur.ts).
 
 [circleci-image]: https://img.shields.io/circleci/project/github/poppinss/colors/master.svg?style=for-the-badge&logo=circleci
 [circleci-url]: https://circleci.com/gh/poppinss/colors 'circleci'
