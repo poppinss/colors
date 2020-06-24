@@ -20,13 +20,18 @@ export class Stringify extends Colors {
    * Perform the given transformation. The base class will
    * invoke this method
    */
-  protected transform (transformation: string): this
-  protected transform (transformation: string, text: string | number): string
-  protected transform (transformation: string, text?: string | number): string | this {
+  protected transform(transformation: string): this
+  protected transform(transformation: string, text: string | number): string
+  protected transform(
+    transformation: string,
+    text?: string | number
+  ): string | this {
     this.chain.push(transformation)
 
     if (text !== undefined) {
-      const output = `${this.chain.join('(')}(${text})${new Array(this.chain.length).join(')')}`
+      const output = `${this.chain.join('(')}(${text})${new Array(
+        this.chain.length
+      ).join(')')}`
       this.chain = []
       return output
     }

@@ -1,6 +1,7 @@
 <div align="center"><img src="https://res.cloudinary.com/adonisjs/image/upload/q_100/v1557762307/poppinss_iftxlt.jpg" width="600px"></div>
 
 # Colors
+
 > Wrapper on top of Kleur with support for testing color calls.
 
 [![circleci-image]][circleci-url] [![typescript-image]][typescript-url] [![npm-image]][npm-url] [![license-image]][license-url]
@@ -17,6 +18,7 @@ This module is a wrapper on top of Kleur to make it easier to test the output ge
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Why use this module?
+
 Have you ever wonder, how to test the output of function calls like the following?
 
 ```js
@@ -43,6 +45,7 @@ assert.equal(colors.bgRed().white('Error'), 'bgRed(white(Error))') // passes
 ```
 
 ## Usage
+
 Install the package from npm registry as follows:
 
 ```sh
@@ -71,13 +74,10 @@ const colors = new FakeColors()
 ```
 
 [circleci-image]: https://img.shields.io/circleci/project/github/poppinss/colors/master.svg?style=for-the-badge&logo=circleci
-[circleci-url]: https://circleci.com/gh/poppinss/colors "circleci"
-
+[circleci-url]: https://circleci.com/gh/poppinss/colors 'circleci'
 [typescript-image]: https://img.shields.io/badge/Typescript-294E80.svg?style=for-the-badge&logo=typescript
-[typescript-url]:  "typescript"
-
+[typescript-url]: "typescript"
 [npm-image]: https://img.shields.io/npm/v/@poppinss/colors.svg?style=for-the-badge&logo=npm
-[npm-url]: https://npmjs.org/package/@poppinss/colors "npm"
-
+[npm-url]: https://npmjs.org/package/@poppinss/colors 'npm'
 [license-image]: https://img.shields.io/npm/l/@poppinss/colors?color=blueviolet&style=for-the-badge
-[license-url]: LICENSE.md "license"
+[license-url]: LICENSE.md 'license'

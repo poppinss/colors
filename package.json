@@ -15,6 +15,7 @@
     "lint": "eslint . --ext=.ts",
     "clean": "del build",
     "compile": "npm run lint && npm run clean && tsc",
+    "format": "prettier --write .",
     "build": "npm run compile",
     "commit": "git-cz",
     "release": "np",
@@ -28,17 +29,20 @@
   "license": "MIT",
   "devDependencies": {
     "@adonisjs/mrm-preset": "^2.3.0",
-    "@types/node": "^14.0.13",
+    "@types/node": "^14.0.14",
     "commitizen": "^4.1.2",
     "cz-conventional-changelog": "^3.2.0",
     "del-cli": "^3.0.1",
     "doctoc": "^1.4.0",
     "eslint": "^7.3.1",
-    "eslint-plugin-adonis": "^1.0.10",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-adonis": "^1.0.12",
+    "eslint-plugin-prettier": "^3.1.4",
     "husky": "^4.2.5",
     "japa": "^3.1.1",
     "mrm": "^2.3.3",
     "np": "^6.2.4",
+    "prettier": "2.0.5",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.5"
   },
@@ -66,6 +70,7 @@
     "anyBranch": false
   },
   "dependencies": {
+    "color-support": "^1.1.3",
     "kleur": "^4.0.1"
   },
   "directories": {

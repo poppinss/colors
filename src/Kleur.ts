@@ -22,9 +22,12 @@ export class Kleur extends Colors {
    * Perform the given transformation. The base class will
    * invoke this method
    */
-  protected transform (transformation: string): this
-  protected transform (transformation: string, text: string | number): string
-  protected transform (transformation: string, text?: string | number): string | this {
+  protected transform(transformation: string): this
+  protected transform(transformation: string, text: string | number): string
+  protected transform(
+    transformation: string,
+    text?: string | number
+  ): string | this {
     const output = this.chain[transformation](text)
 
     if (text !== undefined) {
