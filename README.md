@@ -75,6 +75,7 @@ const colors = new FakeColors()
 ```
 
 ## Raw Implementation
+
 The `Raw` implementation exposes the same API as kleur, but does not apply any formatting/colors to the output string. You can use the raw implementation when the terminal does not support colors. For example:
 
 ```ts
