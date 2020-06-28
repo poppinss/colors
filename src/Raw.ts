@@ -16,17 +16,17 @@ import { Colors } from './Base'
  * One must use it when they want to disable colors
  */
 export class Raw extends Colors {
-  /**
-   * Perform the given transformation. The base class will
-   * invoke this method
-   */
-  protected transform(transformation: string): this
-  protected transform(transformation: string, text: string | number): string
-  protected transform(_: string, text?: string | number): string | this {
-    if (text !== undefined) {
-      return String(text)
-    }
+	/**
+	 * Perform the given transformation. The base class will
+	 * invoke this method
+	 */
+	protected transform(transformation: string): this
+	protected transform(transformation: string, text: string | number): string
+	protected transform(_: string, text?: string | number): string | this {
+		if (text !== undefined) {
+			return String(text)
+		}
 
-    return this
-  }
+		return this
+	}
 }
