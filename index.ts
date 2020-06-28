@@ -29,3 +29,4 @@ export function getBest(isTesting: boolean) {
 
 export { Kleur as Colors }
 export { Stringify as FakeColors }
+export { Raw }
