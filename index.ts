@@ -8,6 +8,7 @@
  */
 
 import { Raw } from './src/Raw'
+import { Colors } from './src/Base'
 import { Kleur } from './src/Kleur'
 import { Stringify } from './src/Stringify'
 
@@ -15,7 +16,7 @@ import { Stringify } from './src/Stringify'
  * Returns the best colors instance based upon the tty
  * and if in testing mode
  */
-export function getBest(isTesting: boolean) {
+export function getBest(isTesting: boolean): Colors {
 	if (isTesting) {
 		return new Stringify()
 	}
