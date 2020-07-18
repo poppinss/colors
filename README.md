@@ -121,7 +121,7 @@ import {
 const colors = new Colors()
 
 // Use for testing
-const fakeColors = new Colors()
+const fakeColors = new FakeColors()
 
 // When running in non-tty terminals
 const rawColors = new Raw()
