@@ -21,19 +21,20 @@ This module is a wrapper on top of Kleur to make it easier to test the output ge
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Why use this module?
+
 This module attempts to solve two specific problems.
 
 - Make it easier to test strings using kleur color transformations.
 - Provide a alternate implementation for non-tty terminals.
 
-### The problem 
+### The problem
 
 Let's imagine you are writing a test to ensure that `function dummy` outputs an error message to the console in certain situation.
 
 ```js
 import { bgRed } from 'kleur'
 
-function dummy () {
+function dummy() {
   if (someCondition) {
     console.log(bgRed().white('Error'))
   }
@@ -111,11 +112,7 @@ yarn add @poppinss/colors
 and then use it as follows:
 
 ```ts
-import {
-  FakeColors,
-  Colors,
-  Raw,
-} from '@poppinss/colors'
+import { FakeColors, Colors, Raw } from '@poppinss/colors'
 
 // Real implementation
 const colors = new Colors()
@@ -129,15 +126,11 @@ const rawColors = new Raw()
 
 [circleci-image]: https://img.shields.io/circleci/project/github/poppinss/colors/master.svg?style=for-the-badge&logo=circleci
 [circleci-url]: https://circleci.com/gh/poppinss/colors 'circleci'
-
 [typescript-image]: https://img.shields.io/badge/Typescript-294E80.svg?style=for-the-badge&logo=typescript
 [typescript-url]: "typescript"
-
 [npm-image]: https://img.shields.io/npm/v/@poppinss/colors.svg?style=for-the-badge&logo=npm
 [npm-url]: https://npmjs.org/package/@poppinss/colors 'npm'
-
 [license-image]: https://img.shields.io/npm/l/@poppinss/colors?color=blueviolet&style=for-the-badge
 [license-url]: LICENSE.md 'license'
-
 [audit-report-image]: https://img.shields.io/badge/-Audit%20Report-blueviolet?style=for-the-badge
-[audit-report-url]: https://htmlpreview.github.io/?https://github.com/poppinss/colors/blob/develop/npm-audit.html "audit-report"
+[audit-report-url]: https://htmlpreview.github.io/?https://github.com/poppinss/colors/blob/develop/npm-audit.html 'audit-report'
