@@ -17,15 +17,15 @@ import { Stringify } from './src/Stringify'
  * and if in testing mode
  */
 export function getBest(isTesting: boolean): Colors {
-	if (isTesting) {
-		return new Stringify()
-	}
+  if (isTesting) {
+    return new Stringify()
+  }
 
-	if (require('color-support').level > 0) {
-		return new Kleur()
-	}
+  if (require('color-support').level > 0) {
+    return new Kleur()
+  }
 
-	return new Raw()
+  return new Raw()
 }
 
 export { Kleur as Colors }

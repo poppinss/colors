@@ -126,15 +126,11 @@ const rawColors = new Raw()
 
 [circleci-image]: https://img.shields.io/circleci/project/github/poppinss/colors/master.svg?style=for-the-badge&logo=circleci
 [circleci-url]: https://circleci.com/gh/poppinss/colors 'circleci'
-
 [typescript-image]: https://img.shields.io/badge/Typescript-294E80.svg?style=for-the-badge&logo=typescript
 [typescript-url]: "typescript"
-
 [npm-image]: https://img.shields.io/npm/v/@poppinss/colors.svg?style=for-the-badge&logo=npm
 [npm-url]: https://npmjs.org/package/@poppinss/colors 'npm'
-
 [license-image]: https://img.shields.io/npm/l/@poppinss/colors?color=blueviolet&style=for-the-badge
 [license-url]: LICENSE.md 'license'
-
 [synk-image]: https://img.shields.io/snyk/vulnerabilities/github/poppinss/colors?label=Synk%20Vulnerabilities&style=for-the-badge
-[synk-url]: https://snyk.io/test/github/poppinss/colors?targetFile=package.json "synk"
+[synk-url]: https://snyk.io/test/github/poppinss/colors?targetFile=package.json 'synk'

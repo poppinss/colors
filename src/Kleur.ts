@@ -16,27 +16,27 @@ import { Colors } from './Base'
  * that makes the testing more reasonable.
  */
 export class Kleur extends Colors {
-	private chain?: kleur.Kleur
+  private chain?: kleur.Kleur
 
-	/**
-	 * Perform the given transformation. The base class will
-	 * invoke this method
-	 */
-	protected transform(transformation: string): this
-	protected transform(transformation: string, text: string | number): string
-	protected transform(transformation: string, text?: string | number): string | this {
-		if (text !== undefined) {
-			const output = (this.chain || kleur)[transformation](text)
-			this.chain = undefined
-			return output
-		}
+  /**
+   * Perform the given transformation. The base class will
+   * invoke this method
+   */
+  protected transform(transformation: string): this
+  protected transform(transformation: string, text: string | number): string
+  protected transform(transformation: string, text?: string | number): string | this {
+    if (text !== undefined) {
+      const output = (this.chain || kleur)[transformation](text)
+      this.chain = undefined
+      return output
+    }
 
-		if (this.chain) {
-			this.chain = this.chain[transformation]()
-		} else {
-			this.chain = kleur[transformation]()
-		}
+    if (this.chain) {
+      this.chain = this.chain[transformation]()
+    } else {
+      this.chain = kleur[transformation]()
+    }
 
-		return this
-	}
+    return this
+  }
 }
