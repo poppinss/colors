@@ -7,13 +7,11 @@
  * file that was distributed with this source code.
  */
 
-import { Kleur } from 'kleur'
-
 /**
  * Base class extended by [[Kleur]] and [[Stringify]] classes to have
  * common interface. The API is kept similar to `kleur` package.
  */
-export abstract class Colors implements Kleur {
+export abstract class Colors {
   protected abstract transform(transformation: string): this
   protected abstract transform(transformation: string, text: string | number): string
   protected abstract transform(transformation: string, text?: string | number): this | string
