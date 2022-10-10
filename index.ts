@@ -1,33 +1,44 @@
-/*
+/**
  * @poppinss/colors
  *
- * (c) Harminder Virk <virk@adonisjs.com>
+ * (c) Poppinss
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-import { Raw } from './src/Raw'
-import { Colors } from './src/Base'
-import { Kleur } from './src/Kleur'
-import { Stringify } from './src/Stringify'
+import { Raw } from './src/raw.js'
+import { Kleur } from './src/kleur.js'
+import { Colors } from './src/base.js'
+import { Silent } from './src/silent.js'
 
-/**
- * Returns the best colors instance based upon the tty
- * and if in testing mode
- */
-export function getBest(isTesting: boolean): Colors {
-  if (isTesting) {
-    return new Stringify()
-  }
-
-  if (require('color-support').level > 0) {
+const useColors: {
+  ansi(): Colors
+  silent(): Colors
+  raw(): Colors
+} = {
+  /**
+   * Kleur implementation
+   */
+  ansi() {
     return new Kleur()
-  }
+  },
 
-  return new Raw()
+  /**
+   * Silent implementation. Returns the string
+   * as it is
+   */
+  silent() {
+    return new Silent()
+  },
+
+  /**
+   * Raw implementation. Wraps string with applied
+   * transformations as plain text.
+   */
+  raw() {
+    return new Raw()
+  },
 }
 
-export { Kleur as Colors }
-export { Stringify as FakeColors }
-export { Raw }
+export default useColors
