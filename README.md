@@ -1,16 +1,3 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-## Table of contents
-
-- [@poppinss/colors](#poppinsscolors)
-  - [Why this package exists?](#why-this-package-exists)
-  - [Usage](#usage)
-    - [Raw implementation](#raw-implementation)
-    - [Silent output](#silent-output)
-  - [Pick based upon the runtime environment](#pick-based-upon-the-runtime-environment)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
 # @poppinss/colors
 > **Not yet another** ANSI colors library for Node.js
 
