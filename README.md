@@ -6,7 +6,7 @@
 ## Why this package exists?
 There are already million color libraries in Node.js, so why are you creating another one, moron?.
 
-Wait. This is not a yet another colors library. Instead, this package is a wrapper over [kleur](https://www.npmjs.com/package/kleur) with a couple other implementations to make testing easier and work seamlessly with terminals/stdout streams that does not support colors.
+Wait. This is not yet another color library. Instead, this package is a wrapper over [kleur](https://www.npmjs.com/package/kleur) with a couple of other implementations to make testing easier and work seamlessly with terminals/stdout streams that do not support colors.
 
 ## Usage
 Install the package from the npm registry as follows.
@@ -46,14 +46,14 @@ console.log(colors.bgBlack().red('hello world'))
 // OUTPUT: bgBlack(red(hello world))
 ```
 
-As you can notice, the output is a plain text value and therefore it is easier to write assertions against it.
+As you can notice, the output is a plain text value, so it is easier to write assertions against it.
 
 ```ts
 assert.equal(colors.red('hello world'), 'red(hello world)')
 ```
 
 ### Silent output
-The silent mode does not perform any transformations on the string and returns the value as it is. This is helpful when the output terminal or stdout stream does not support colors.
+The silent mode does not perform any transformations on the string and returns the value. This is helpful when the output terminal or stdout stream does not support colors.
 
 ```ts
 import useColors from '@poppinss/colors'
@@ -66,8 +66,8 @@ console.log(colors.bgBlack().red('hello world'))
 // OUTPUT: hello world
 ```
 
-## Pick based upon the runtime environment
-Ideally, you will be using one of the available implementations based upon some runtime environment. For example:
+## Pick based on the runtime environment
+Ideally, you will use one of the available implementations based on some runtime environment. For example:
 
 ```ts
 import useColors from '@poppinss/colors'
