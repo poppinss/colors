@@ -15,7 +15,7 @@
 	},
 	"scripts": {
 		"pretest": "npm run lint",
-		"test": "npm run vscode:test",
+		"test": "c8 npm run vscode:test",
 		"clean": "del-cli build",
 		"compile": "npm run lint && npm run clean && tsc",
 		"format": "prettier --write .",
@@ -42,6 +42,7 @@
 		"@japa/spec-reporter": "^1.3.2",
 		"@swc/core": "^1.3.11",
 		"@types/node": "^18.11.7",
+		"c8": "^7.12.0",
 		"del-cli": "^5.0.0",
 		"doctoc": "^2.2.1",
 		"eslint": "^8.26.0",
@@ -110,5 +111,14 @@
 		"tag": "next",
 		"branch": "main",
 		"anyBranch": false
+	},
+	"c8": {
+		"reporter": [
+			"text",
+			"html"
+		],
+		"exclude": [
+			"tests/**"
+		]
 	}
 }
