@@ -1,6 +1,6 @@
 {
 	"name": "@poppinss/colors",
-	"version": "4.0.0-1",
+	"version": "4.0.0-2",
 	"description": "A wrapper on top of kleur with ability to write test against the color functions",
 	"main": "build/index.js",
 	"type": "module",
