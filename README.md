@@ -1,12 +1,10 @@
 # @poppinss/colors
-> **Not yet another** ANSI colors library for Node.js
+> Wrapper over [kleur](https://www.npmjs.com/package/kleur) with better support for testing
 
 [![gh-workflow-image]][gh-workflow-url] [![typescript-image]][typescript-url] [![npm-image]][npm-url] [![license-image]][license-url] [![synk-image]][synk-url]
 
 ## Why this package exists?
-There are already million color libraries in Node.js, so why are you creating another one, moron?.
-
-Wait. This is not yet another color library. Instead, this package is a wrapper over [kleur](https://www.npmjs.com/package/kleur) with a couple of other implementations to make testing easier and work seamlessly with terminals/stdout streams that do not support colors.
+This package is a wrapper over [kleur](https://www.npmjs.com/package/kleur) with a couple of other implementations to make testing easier and work seamlessly with terminals/stdout streams that do not support colors.
 
 ## Usage
 Install the package from the npm registry as follows.
