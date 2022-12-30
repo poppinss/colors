@@ -17,6 +17,11 @@ import { ColorTransformations } from './types.js'
 export class Kleur extends Colors {
   #chain?: kleur.Kleur
 
+  constructor() {
+    super()
+    kleur.enabled = true
+  }
+
   #dispose<T>(value: T, callback: () => void) {
     callback()
     return value
