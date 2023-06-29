@@ -1,6 +1,6 @@
 {
 	"name": "@poppinss/colors",
-	"version": "4.1.0-2",
+	"version": "4.1.0-3",
 	"description": "A wrapper on top of kleur with ability to write test against the color functions",
 	"main": "build/index.js",
 	"type": "module",
@@ -13,9 +13,9 @@
 		".": "./build/index.js",
 		"./types": "./build/src/types.js"
 	},
-  "engines": {
-    "node": ">=18.16.0"
-  },
+	"engines": {
+		"node": ">=18.16.0"
+	},
 	"scripts": {
 		"pretest": "npm run lint",
 		"test": "c8 npm run vscode:test",
