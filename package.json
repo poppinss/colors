@@ -1,6 +1,6 @@
 {
 	"name": "@poppinss/colors",
-	"version": "4.1.3",
+	"version": "4.1.4",
 	"description": "A wrapper on top of kleur with ability to write test against the color functions",
 	"main": "build/index.js",
 	"type": "module",
@@ -67,10 +67,10 @@
 	"license": "MIT",
 	"homepage": "https://github.com/poppinss/colors#readme",
 	"publishConfig": {
-    "access": "public",
-    "provenance": true
-  },
-  "tsup": {
+		"access": "public",
+		"provenance": true
+	},
+	"tsup": {
 		"entry": [
 			"./index.ts",
 			"./src/types.ts"
@@ -82,30 +82,30 @@
 		"sourcemap": false,
 		"target": "esnext"
 	},
-  "release-it": {
-    "git": {
-      "requireCleanWorkingDir": true,
-      "requireUpstream": true,
-      "commitMessage": "chore(release): ${version}",
-      "tagAnnotation": "v${version}",
-      "push": true,
-      "tagName": "v${version}"
-    },
-    "github": {
-      "release": true
-    },
-    "npm": {
-      "publish": true,
-      "skipChecks": true
-    },
-    "plugins": {
-      "@release-it/conventional-changelog": {
-        "preset": {
-          "name": "angular"
-        }
-      }
-    }
-  },
+	"release-it": {
+		"git": {
+			"requireCleanWorkingDir": true,
+			"requireUpstream": true,
+			"commitMessage": "chore(release): ${version}",
+			"tagAnnotation": "v${version}",
+			"push": true,
+			"tagName": "v${version}"
+		},
+		"github": {
+			"release": true
+		},
+		"npm": {
+			"publish": true,
+			"skipChecks": true
+		},
+		"plugins": {
+			"@release-it/conventional-changelog": {
+				"preset": {
+					"name": "angular"
+				}
+			}
+		}
+	},
 	"c8": {
 		"reporter": [
 			"text",
