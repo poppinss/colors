@@ -8,7 +8,7 @@
  */
 
 import { Colors } from './base.js'
-import { ColorTransformations } from './types.js'
+import { type ColorTransformations } from './types.js'
 
 /**
  * Concrete implementation of the Colors class that prefixes the

@@ -9,7 +9,7 @@
 
 import { Raw } from './src/raw.js'
 import { Kleur } from './src/kleur.js'
-import { Colors } from './src/base.js'
+import { type Colors } from './src/base.js'
 import { Silent } from './src/silent.js'
 
 const useColors: {
