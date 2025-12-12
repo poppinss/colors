@@ -1,6 +1,6 @@
 {
 	"name": "@poppinss/colors",
-	"version": "4.1.5",
+	"version": "4.1.6",
 	"description": "A wrapper on top of kleur with ability to write test against the color functions",
 	"main": "build/index.js",
 	"type": "module",
@@ -72,14 +72,14 @@
 			"./src/types.ts"
 		],
 		"outDir": "./build",
-    "clean": true,
-    "format": "esm",
-    "minify": "dce-only",
-    "fixedExtension": false,
-    "dts": false,
-    "treeshake": false,
-    "sourcemaps": false,
-    "target": "esnext"
+		"clean": true,
+		"format": "esm",
+		"minify": "dce-only",
+		"fixedExtension": false,
+		"dts": false,
+		"treeshake": false,
+		"sourcemaps": false,
+		"target": "esnext"
 	},
 	"release-it": {
 		"git": {
