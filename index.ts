@@ -7,10 +7,10 @@
  * file that was distributed with this source code.
  */
 
-import { Raw } from './src/raw.js'
-import { Kleur } from './src/kleur.js'
-import { type Colors } from './src/base.js'
-import { Silent } from './src/silent.js'
+import { Raw } from './src/raw.ts'
+import { Kleur } from './src/kleur.ts'
+import { type Colors } from './src/base.ts'
+import { Silent } from './src/silent.ts'
 
 const useColors: {
   ansi(): Colors

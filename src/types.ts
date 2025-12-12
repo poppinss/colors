@@ -7,7 +7,7 @@
  * file that was distributed with this source code.
  */
 
-import { type Colors } from './base.js'
+import { type Colors } from './base.ts'
 
-export type { Colors } from './base.js'
+export type { Colors } from './base.ts'
 export type ColorTransformations = keyof Colors

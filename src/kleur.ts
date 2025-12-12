@@ -8,8 +8,8 @@
  */
 
 import kleur from 'kleur'
-import { Colors } from './base.js'
-import { type ColorTransformations } from './types.js'
+import { Colors } from './base.ts'
+import { type ColorTransformations } from './types.ts'
 
 /**
  * Concrete implementation of the Colors class using Kleur

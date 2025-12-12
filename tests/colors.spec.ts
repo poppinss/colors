@@ -10,7 +10,7 @@
 import kleur from 'kleur'
 import { test } from '@japa/runner'
 
-import useColors from '../index.js'
+import useColors from '../index.ts'
 
 test.group('Colors | Raw', () => {
   test('get string representation of color transformations', ({ assert }) => {
